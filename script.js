@@ -8,8 +8,12 @@ function validate(e) {
     const msgBox = document.getElementById('message');
 
     let message = '';
+    if (name===""){
+        message="Please enter an name"
+        msgBox.style.color="yellow"
+    }
 
-    if (email === '') {
+    else if (email === '') {
         message = 'Please enter an email.';
         msgBox.style.color = 'red';
     } else if (pass === '') {
